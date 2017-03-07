@@ -7,22 +7,22 @@
 \pagestyle{plain}
 
 % Include support of UTF-8
-\usepackage[utf8x]{inputenc}
+\usepackage[utf8]{inputenc}
 
 % Multilanguage package
 \usepackage[english, russian]{babel}
 
 % Package for including graphics
 %\usepackage[dvips]{graphicx}
-\usepackage[pdftex]{graphicx}
+%\usepackage[pdftex]{graphicx}
 \usepackage{verse}
 
-\usepackage[marginratio=3:2]{geometry}
-\geometry{papersize={145mm, 205mm}}
+%\usepackage[marginratio=3:2]{geometry}
+%\geometry{papersize={145mm, 205mm}}
 
 % Caption package
 % Убираем обязательные подписи к фотографиям (Рис.)
-\usepackage{caption}
+%\usepackage{caption}
 
 % Include multidots module
 \include{mantra}
@@ -38,22 +38,27 @@
 \begin{document}
 
 % Титульный лист
-\include{title}
+%\include{title}
 
+\tableofcontents
 %\pagenumbering{gobble}
-\include{oborot}
+%\include{oborot}
 
 % Стихотворения
+\chapter{Стихотворения}
 \include{verses}
 
+\chapter{Публицистика}
+\include{journalism}
+
 % Фотографии
-\include{end-photos}
+%\include{end-photos}
 
 % Содержание
 
 % Tricks for minimizing line-height
 %\renewcommand{\baselinestretch}{0.915}\normalsize
-\tableofcontents
+
 %\renewcommand{\baselinestretch}{1.0}\normalsize
 
 
